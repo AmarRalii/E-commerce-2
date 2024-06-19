@@ -38,7 +38,7 @@ export default function Product({ prod }) {
   }
 
   return (
-    <div className="col-md-2">
+    <div className="col-md-3">
       <div className="product cursor-pointer p-2">
         <i
           className="fa-solid fa-heart fa-1x"
@@ -50,7 +50,7 @@ export default function Product({ prod }) {
         ></i>
 
         <Link to={`productDetails/${prod._id}`}>
-          <img src={prod.imageCover} alt={prod.title} className="w-100" />
+          <img src={prod.imageCover} alt={prod.title} className="w-75" />
           <h2 className="h5 text-main">{prod.category.name}</h2>
           <p>{prod.title}</p>
           <div className="box d-flex justify-content-between">
