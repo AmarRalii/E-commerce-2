@@ -7,6 +7,7 @@ import CategorySlider from './../../CategorySlider';
 import Helmet from 'react-helmet'
 
 export default function Home() {
+  let token = localStorage.getItem('userToken')
   const { data, error, isError, isLoading } = useProduct('home', getProduct); 
 
   if (isLoading) { 
@@ -18,6 +19,8 @@ export default function Home() {
       <h2>{error.message}</h2>
     </div>;
   }
+
+  console.log(token);
 
   return (
     <div className='container'>

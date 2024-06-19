@@ -6,7 +6,7 @@ import { useMutation, useQuery, useQueryClient } from "react-query";
 let token = localStorage.getItem('userToken')
 
 export function addToWish(productId) {
-    return axios.post(`https://route-ecommerce.onrender.com/api/v1/wishlist`, { productId }, {
+    return axios.post(`https://ecommerce.routemisr.com/api/v1/wishlist`, { productId }, {
         headers: {
             token
         }
@@ -15,7 +15,7 @@ export function addToWish(productId) {
 
 
 export function deleteWish(productId) {
-    return axios.delete(`https://route-ecommerce.onrender.com/api/v1/wishlist/${productId}`, {
+    return axios.delete(`https://ecommerce.routemisr.com/api/v1/wishlist/${productId}`, {
         headers: {
             token
         }
@@ -24,7 +24,7 @@ export function deleteWish(productId) {
 
 
 export function getWish() {
-    return axios.get(`https://route-ecommerce.onrender.com/api/v1/wishlist`, {
+    return axios.get(`https://ecommerce.routemisr.com/api/v1/wishlist`, {
         headers: {
             token
         }

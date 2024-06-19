@@ -12,6 +12,7 @@ export function addToCart(productId){
         }
     })
 }
+console.log(token);
 export function getCart(){
     return axios.get(`https://ecommerce.routemisr.com/api/v1/cart`,{
         headers : {
