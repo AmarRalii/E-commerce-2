@@ -16,7 +16,7 @@ export default function ForgetPassword() {
       values
     );
     console.log(data);
-    if(data?.statusMsg == 'success'){
+    if(data?.statusMsg === 'success'){
         document.querySelector('.forgotPassword').classList.add('d-none')
         document.querySelector('.VerifyPassword').classList.remove('d-none')
     }
@@ -41,7 +41,7 @@ let navigate=useNavigate()
       values
     );
     console.log(data);
-    if(data.status == 'Success'){
+    if(data.status === 'Success'){
         navigate('/resetPassword')
     }
   }

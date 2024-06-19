@@ -21,7 +21,7 @@ export function deleteWish(productId) {
         }
     })
 }
-
+//ecommerce.routemisr.com
 
 export function getWish() {
     return axios.get(`https://ecommerce.routemisr.com/api/v1/wishlist`, {
