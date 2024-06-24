@@ -6,6 +6,9 @@ import  axios  from 'axios';
 export function getProduct(){
   return axios.get('https://ecommerce.routemisr.com/api/v1/products')
 }
+export function getProductelectronics(){
+  return axios.get('https://ecommerce.routemisr.com/api/v1/products?page=2')
+}
 
 export function getCategory(){
   return axios.get('https://ecommerce.routemisr.com/api/v1/categories')

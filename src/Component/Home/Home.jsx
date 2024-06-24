@@ -30,7 +30,7 @@ export default function Home() {
     </Helmet>
       <MainSlider />
       <CategorySlider/>
-      <div className="row mt-5">
+      <div className="row mt-5 gy-3">
         {data?.map((prod) => ( 
           <Product prod={prod} key={prod._id} /> 
         ))}

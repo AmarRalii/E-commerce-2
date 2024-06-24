@@ -25,10 +25,14 @@ a , a:hover{
     color: black;
     text-decoration: none;
 }
+.product{
+  height: 450px;
+  position: relative;
+}
+
 .product:hover
 {
-    box-shadow: var(--shadow);
-    border: solid 1px var(--main-color);
+    box-shadow: 5px 5px 21px #dedede, 5px 5px 21px #dedede;
 }
 .category:hover{
   box-shadow: var(--shadow);
@@ -45,6 +49,10 @@ a , a:hover{
     opacity: 1;
     transform: translateY(0%);
 
+}
+.product i{
+  
+  right: 10px;
 }
 .font-sm
 {

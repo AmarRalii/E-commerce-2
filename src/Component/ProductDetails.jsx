@@ -79,7 +79,7 @@ export default function ProductDetails() {
           
           <br />
           <div className="box d-flex justify-content-between">
-            <span>{data.price} EGP</span>
+            <span className="fw-bold" >{data.price} EGP</span>
             <span>
               {data.ratingsAverage}{" "}
               <i className="fa-solid fa-star rating-color"></i>

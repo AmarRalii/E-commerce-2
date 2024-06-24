@@ -1,11 +1,11 @@
 import React from 'react'
 import Loading from './../Loading';
-import { getProduct, useProduct } from '../../useProduct';
+import { getProductelectronics, useProduct } from '../../useProduct';
 import Product from './../Product';
 import Helmet from 'react-helmet';
 export default function Products() {
 
-  let {data,error,isError,isLoading} = useProduct('product',getProduct)
+  let {data,error,isError,isLoading} = useProduct('product',getProductelectronics)
 
 
   if(isLoading){
@@ -22,7 +22,7 @@ export default function Products() {
         <title>Products</title>
         <meta name="description" content="Helmet application" />
     </Helmet>
-      <div className="row">
+      <div className="row gy-4">
         {data?.map(prod=><Product prod={prod} key={prod._id}></Product>)}
       </div>
     </div>

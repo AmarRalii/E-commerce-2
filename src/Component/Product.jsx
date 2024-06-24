@@ -41,7 +41,7 @@ export default function Product({ prod }) {
     <div className="col-md-3">
       <div className="product cursor-pointer p-2">
         <i
-          className="fa-solid fa-heart fa-1x"
+          className="fa-solid fa-heart fa-1x fs-4"
           style={{ color: heart ? "red" : "" }}
           onClick={() => {
             Wmutate(prod._id);
@@ -50,9 +50,9 @@ export default function Product({ prod }) {
         ></i>
 
         <Link to={`productDetails/${prod._id}`}>
-          <img src={prod.imageCover} alt={prod.title} className="w-75" />
+          <img src={prod.imageCover} alt={prod.title} className="w-75 " />
           <h2 className="h5 text-main">{prod.category.name}</h2>
-          <p>{prod.title}</p>
+          <p>{prod.title.split(' ').slice(0,8).join(' ')}</p>
           <div className="box d-flex justify-content-between">
             <span>{prod.price} EGP</span>
             <span>
@@ -61,6 +61,7 @@ export default function Product({ prod }) {
             </span>
           </div>
         </Link>
+        
         <button
           className="btn btn-brdr text-center my-2 w-100"
           onClick={() => {
